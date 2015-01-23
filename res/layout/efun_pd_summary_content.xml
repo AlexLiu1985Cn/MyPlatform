@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_f1f1f1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_110"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/e_size_18"
+            android:text="@string/efun_pd_summary_notice_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/e_text_size_55" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_288"
+        android:layout_marginTop="@dimen/e_size_10"
+        android:layout_marginLeft="@dimen/e_size_24"
+        android:layout_marginRight="@dimen/e_size_24" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/e_size_5"
+        android:visibility="gone" >
+
+        <com.efun.platform.widget.ZoomPointContainer
+            android:id="@+id/zoom_point_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </com.efun.platform.widget.ZoomPointContainer>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/e_size_10"
+        android:background="@color/e_b6b6b6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_120"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/e_size_18"
+            android:text="@string/efun_pd_summary_news_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/e_text_size_55" />
+
+        <TextView
+            android:id="@+id/more_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/e_size_40"
+            android:gravity="right"
+            android:text="@string/efun_pd_recommended_games_more"
+            android:textColor="@color/efun_pd_text_4ba8ff_to_a0a0a0_selecter"
+            android:textSize="@dimen/e_text_size_35"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.efun.platform.module.summary.view.SummCommContainer
+        android:id="@+id/summary_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_120"
+        android:layout_marginTop="@dimen/e_size_20"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/e_size_18"
+            android:text="@string/efun_pd_summary_guider_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/e_text_size_55" />
+    </LinearLayout>
+
+    <com.efun.platform.module.summary.view.SummCommContainer
+        android:id="@+id/summary_guids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+
+</LinearLayout>

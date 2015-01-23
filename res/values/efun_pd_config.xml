@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 砸蛋 -->
+    <string name="efun_pd_method_knock_egg">ernie_info.html</string>
+    <!-- 关于我们 -->
+    <string name="efun_pd_method_about_us">about_us.html</string>
+    
+    <string name="efun_pd_method_vip">vip/vip_member.html</string>
+    <string name="efun_pd_method_member_desc">member_desc.html</string>
+    <!-- 资讯-获取首页信息 -->
+    <string name="efun_pd_method_summary_home">gameinfo_appIndex.shtml</string>
+    <!-- 资讯-获取资讯列表 -->
+    <string name="efun_pd_method_summary_list">gameinfo_getNewsPage.shtml</string>
+
+    <!-- 游戏列表 -->
+    <string name="efun_pd_method_game_list">gameinfo_gameList.shtml</string>
+    <!-- 游戏详情 -->
+    <string name="efun_pd_method_game_detail">gameinfo_gameDetail.shtml</string>
+    <!-- 游戏资讯 -->
+    <string name="efun_pd_method_game_news">gameinfo_getNewsV2.shtml</string>
+    <!-- 游戏评论列表 -->
+    <string name="efun_pd_method_game_commend_list">gameinfo_getComment.shtml</string>
+    <!-- 游戏评论 -->
+    <string name="efun_pd_method_game_commend">gameinfo_addComment.shtml</string>
+    <!-- 游戏点赞 -->
+    <string name="efun_pd_method_game_like">gameinfo_like.shtml</string>
+
+    <!-- 账号-登陆 -->
+    <string name="efun_pd_method_login">member_getMemberInfo.shtml</string>
+    <!-- 账号-三方登陆或注册 -->
+    <string name="efun_pd_method_third_platform">standard_thirdPlateLogin.shtml</string>
+    <!-- 账号-注册 -->
+    <string name="efun_pd_method_register">user_register.shtml</string>
+    <!-- 账号-找回密码 -->
+    <string name="efun_pd_method_forget_pwd">user_findPwdByEmail.shtml</string>
+    <!-- 账号-修改密码 -->
+    <string name="efun_pd_method_reset_pwd">user_modifyPassword.shtml</string>
+    <!-- 账号-绑定手机号发送验证码 -->
+    <string name="efun_pd_method_bind_phone_send_vcode">user_sendVcodeToPhone.shtml</string><!-- platform.efun.com/user_userBindCellphone.shtml -->
+    <!-- 账号-绑定手机号 -->
+    <string name="efun_pd_method_bind_phone">user_bindPhone.shtml</string><!-- user_authenUserPhone.shtml -->
+
+    <!-- 用户-获取用户信息 -->
+    <string name="efun_pd_method_user_info">member_getMemberByUid.shtml</string>
+    <!-- 用户-上传头像 -->
+    <string name="efun_pd_method_user_header">app_uploadImg.shtml</string>
+    <!-- 用户-更新用户信息 -->
+    <string name="efun_pd_method_user_update">member_updateFromApp.shtml</string>
+
+    <!-- 设置-检查版本 -->
+    <string name="efun_pd_method_check_version">app_checkAppVersoin.shtml</string>
+    <!-- 好康-活动列表 -->
+    <string name="efun_pd_method_act_list">act_getAPPActivityList.shtml</string>
+    <!-- 好康-领取免费点数 -->
+    <string name="efun_pd_method_act_extension">act_getAPPTaskList.shtml</string>
+    <!-- 好康-领取礼包 -->
+    <string name="efun_pd_method_act_extension_gift">act_receiveAwards.shtml</string>
+    <!-- 好康-领取礼包-下载许可 -->
+    <string name="efun_pd_method_act_extension_download">cp_dlstatistics.shtml</string>
+    <!-- 好康-礼包列表 -->
+    <string name="efun_pd_method_gift_list">gift_appGetGifts.shtml</string>
+    <!-- 好康-抢礼包 -->
+    <string name="efun_pd_method_gift_knock">gift_getGiftByUid.shtml</string>
+    <!-- 好康-序列号列表 -->
+    <string name="efun_pd_method_gift_self_list">gift_myGifts.shtml</string>
+    <string name="efun_pd_method_gift_self_status">gift_handleGiftStatus.shtml</string>
+    
+    <!-- 客服获取游戏 -->
+    <string name="efun_pd_method_cs_gain_games">game_findAllGameNameAndGameCode.shtml</string>
+    <!-- 客服获取服务器 -->
+    <string name="efun_pd_method_cs_gain_servers">gameServer_findAllServerByGameCodePC.shtml</string>
+    <!-- 客服获取角色 -->
+    <string name="efun_pd_method_cs_gain_role">gameRole_findRole.shtml</string>
+    <!-- 客服提问 -->
+    <string name="efun_pd_method_cs_ask">cs_create.shtml</string>
+    <!-- 客服-问题列表 -->
+    <string name="efun_pd_method_cs_question_list">cs_listCommonQuestion.shtml</string>
+    
+
+    <!-- 客服回复历史记录列表 -->
+    <string name="efun_pd_method_cs_replay_question_list">cs_listV2.shtml</string>
+    <!-- 客服回复-评分且完结问题 -->
+    <string name="efun_pd_method_cs_replay_finish_question">cs_updateProblemStatus.shtml</string>
+    <!-- 客服回复-玩家回复问题 -->
+    <string name="efun_pd_method_cs_replay_question">csreply_create.shtml</string>
+    <!-- 客服回复-玩家回复问题 -->
+    <string name="efun_pd_method_cs_replay_details">cs_getDetailById.shtml</string>
+    <!-- 客服提問-紅點提示 -->
+    <string name="efun_pd_method_cs_replay_status">cs_checkReplyCount.shtml</string>
+    <!-- 客服-获取FB用户的信息列表 -->
+    <string name="efun_pd_method_cs_get_fbuserInfos">pcLogin_loadUserGameRelation.shtml</string>
+    
+    <!-- 悬浮按钮 -->
+    <string name="efun_pd_method_float_btn_url">game_openFloatButton.shtml</string>
+    
+    <!-- 储值页面链接 -->
+    <string name="efun_pd_method_recharge_url">payForward_toPayByPlatform.shtml</string>
+    <!-- payType -->
+    <string name="efun_pd_recharge_params_paytype">floatAndro</string>
+    <string name="efun_pd_recharge_params_passwordkey">ppqiazjaA157JIiidSLiqNViiM</string>
+
+</resources>

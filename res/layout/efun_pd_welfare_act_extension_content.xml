@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/e_size_16"
+            android:paddingLeft="@dimen/e_size_62"
+            android:paddingTop="@dimen/e_size_16" >
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="@dimen/e_size_190"
+                android:layout_height="@dimen/e_size_190" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/e_size_35" >
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/e_353434"
+                    android:textSize="@dimen/e_text_size_50" />
+
+                <TextView
+                    android:id="@+id/item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/e_size_12"
+                    android:layout_marginTop="@dimen/e_size_13"
+                    android:textColor="@color/e_8e8e8e"
+                    android:textSize="@dimen/e_text_size_40" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/item_text"
+                    android:layout_width="@dimen/e_size_120"
+                    android:layout_height="@dimen/e_size_45"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/e_size_5"
+                    android:layout_marginRight="@dimen/e_size_10"
+                    android:src="@drawable/efun_pd_zan_icon" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_button"
+                android:layout_width="@dimen/e_size_100"
+                android:layout_height="@dimen/e_size_100"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/e_size_30"
+                android:layout_marginTop="@dimen/e_size_20" />
+        </LinearLayout>
+		
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/gift_robble" 
+                android:layout_width="@dimen/e_size_320"
+                android:layout_height="@dimen/e_size_222"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/efun_pd_welfare_gift_robbled"/>
+        </LinearLayout>
+        
+        <com.efun.platform.widget.RoundCornerTextView
+            android:id="@+id/round_text"
+            android:layout_width="@dimen/e_size_200"
+            android:layout_height="@dimen/e_size_47"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/e_text_size_30" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/e_size_40"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/e_size_20"
+        android:paddingLeft="@dimen/e_size_62"
+        android:paddingTop="@dimen/e_size_20"
+        android:text="@string/efun_pd_receive_step"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/e_text_size_45" />
+
+    <com.efun.platform.module.welfare.view.TaskContainer
+        android:background="@android:color/white"
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/e_size_62"
+        android:paddingRight="@dimen/e_size_62" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/e_size_62"
+        android:layout_marginRight="@dimen/e_size_62"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contaier_linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/e_ffe384" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/e_size_120"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/e_size_50"
+                    android:layout_height="@dimen/e_size_50"
+                    android:background="@drawable/efun_pd_welfare_bind" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/e_size_20"
+                    android:text="@string/efun_pd_account_bind"
+                    android:textColor="@color/e_5d340c"
+                    android:textSize="@dimen/e_text_size_50" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/e_size_25"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/e_size_62"
+                android:layout_marginRight="@dimen/e_size_44"
+                android:text="@string/efun_pd_account"
+                android:textColor="@color/e_5fb1ff"
+                android:textSize="@dimen/e_text_size_45" />
+
+            <EditText
+                android:id="@+id/edit_1"
+                android:layout_width="@dimen/e_size_480"
+                android:layout_height="@dimen/e_size_100"
+                android:background="@drawable/efun_pd_input_bg"
+                android:hint="@string/efun_pd_account_hint"
+                android:paddingLeft="@dimen/e_size_20"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/e_8f8f8f"
+                android:textSize="@dimen/e_text_size_35"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/e_size_32"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/e_size_62"
+                android:layout_marginRight="@dimen/e_size_44"
+                android:text="@string/efun_pd_verify_code"
+                android:textColor="@color/e_5fb1ff"
+                android:textSize="@dimen/e_text_size_45" />
+
+            <EditText
+                android:id="@+id/edit_2"
+                android:layout_width="@dimen/e_size_480"
+                android:layout_height="@dimen/e_size_100"
+                android:background="@drawable/efun_pd_input_bg"
+                android:hint="@string/efun_pd_verify_code_hint"
+                android:paddingLeft="@dimen/e_size_20"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/e_8f8f8f"
+                android:textSize="@dimen/e_text_size_35"
+                android:inputType="number"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="@dimen/e_size_320"
+                android:layout_height="@dimen/e_size_130"
+                android:layout_marginLeft="@dimen/e_size_20"
+                android:layout_marginRight="@dimen/e_size_20"
+                android:background="@drawable/efun_pd_setting_button_selector"
+                android:gravity="center"
+                android:text="@string/efun_pd_get_verify_code"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/e_text_size_40" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/e_size_40" >
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="@dimen/e_size_320"
+                android:layout_height="@dimen/e_size_130"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/efun_pd_setting_button_selector"
+                android:gravity="center"
+                android:text="@string/efun_pd_bind_account"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/e_text_size_50" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="@dimen/e_size_40"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/e_size_16"
+            android:gravity="center_horizontal"
+            android:text="@string/efun_pd_get_awards_rule"
+            android:textColor="@color/e_5fb1ff"
+            android:textSize="@dimen/e_text_size_40" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/e_text_size_35" />
+    </LinearLayout>
+
+</LinearLayout>

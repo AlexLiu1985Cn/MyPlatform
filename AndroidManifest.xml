@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.efun.platform"
+    android:versionCode="2"
+    android:versionName="2.0"
+    android:installLocation="internalOnly" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name="com.efuntw.platform.IPlatApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/efun_pd_app_name"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.efuntw.platform.FrameTabContainer"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.WebActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.game.activity.GameDetailActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.summary.activity.SummaryListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.game.activity.GameCommendActivity"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.ActExtensionActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.GiftListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.ActListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.GiftSelfActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.GiftDetailActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.welfare.activity.ActDetailActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsAskActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@android:style/Theme.Light.NoTitleBar" android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsQuestionActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsQuestionContentActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsReplyActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsCommendActivity"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.cs.activity.CsReplyDetailsActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.efun.platform.module.settting.activity.SettingActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.account.activity.BindPhoneActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.account.activity.LoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.efuntw.platform.module.account.activity.FacebookActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+   
+        <service
+            android:name="com.efuntw.platform.service.IPlatService"
+            android:exported="false" >
+        </service>
+        facebook分享
+         <activity
+            android:name="com.efun.facebook.share.activity.EfunFBFunctionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        FACEBOOK登录
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/efunFBApplicationId" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <service
+            android:name="com.efun.pushnotification.ScheduleService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="com.efun.pushnotification.BootBroadcastReceiver" >
+            <intent-filter>
+                系统启动完成后会调用
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        
+                ads
+        Google Analytics
+        <service android:name="com.efun.ads.activity.EfunGAService"
+            android:exported="false">
+        </service>
+        S2S ads
+        <service android:name="com.efun.ads.activity.EfunAdsS2SService" 
+            android:exported="false">
+        </service>
+    </application> -->
+
+</manifest>

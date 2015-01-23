@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/e_size_100"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/summary_title" 
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/e_272727"
+            android:textSize="@dimen/e_text_size_45" />
+        <TextView
+            android:id="@+id/summary_time" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/e_272727"
+            android:layout_marginRight="@dimen/e_size_35"
+            android:textSize="@dimen/e_text_size_30" />
+
+</LinearLayout>

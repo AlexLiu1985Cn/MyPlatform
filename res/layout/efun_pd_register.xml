@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.efun.platform.widget.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.efun.platform.widget.TitleView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/e_size_24"
+            android:background="@drawable/efun_pd_cons_white_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_118"
+                    android:layout_marginLeft="@dimen/e_size_88"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_register_account"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/e_text_size_50" />
+
+                <EditText
+                    android:id="@+id/edit_1"
+                    android:layout_width="@dimen/e_size_700"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/e_size_10"
+                    android:background="@drawable/efun_pd_input_edging_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="@dimen/e_text_size_40" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_70"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/e_size_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_hint_register_account"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/e_text_size_30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/e_size_1"
+                android:layout_marginLeft="@dimen/e_size_38"
+                android:layout_marginRight="@dimen/e_size_38"
+                android:background="@color/e_a7a7aa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_118"
+                    android:layout_marginLeft="@dimen/e_size_88"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_register_password"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/e_text_size_50" />
+
+                <EditText
+                    android:id="@+id/edit_2"
+                    android:layout_width="@dimen/e_size_700"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/e_size_10"
+                    android:background="@drawable/efun_pd_input_edging_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="@dimen/e_text_size_40" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_70"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/e_size_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_hint_register_password"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/e_text_size_30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/e_size_1"
+                android:layout_marginLeft="@dimen/e_size_38"
+                android:layout_marginRight="@dimen/e_size_38"
+                android:background="@color/e_a7a7aa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_118"
+                    android:layout_marginLeft="@dimen/e_size_88"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_register_cofirm_password"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/e_text_size_50" />
+
+                <EditText
+                    android:id="@+id/edit_3"
+                    android:layout_width="@dimen/e_size_700"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/e_size_10"
+                    android:background="@drawable/efun_pd_input_edging_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="@dimen/e_text_size_40" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_70"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/e_size_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_hint_register_cofirm_password"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/e_text_size_30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/e_size_1"
+                android:layout_marginLeft="@dimen/e_size_38"
+                android:layout_marginRight="@dimen/e_size_38"
+                android:background="@color/e_a7a7aa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_118"
+                    android:layout_marginLeft="@dimen/e_size_88"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_register_email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/e_text_size_50" />
+
+                <EditText
+                    android:id="@+id/edit_4"
+                    android:layout_width="@dimen/e_size_700"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/e_size_10"
+                    android:background="@drawable/efun_pd_input_edging_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="@dimen/e_text_size_40" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_70"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/e_size_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/efun_pd_hint_register_email"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/e_text_size_30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/cb_server_clause"
+                    android:layout_width="@dimen/e_size_80"
+                    android:layout_height="@dimen/e_size_80"
+                    android:layout_marginBottom="@dimen/e_size_44"
+                    android:background="@drawable/efun_pd_checkbox_selector"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/txt_server_clause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/e_size_80"
+                    android:text="@string/efun_pd_agree_service_clause"
+                    android:textSize="@dimen/e_text_size_40" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="@dimen/e_size_600"
+                android:layout_height="@dimen/e_size_130"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/efun_pd_cons_account_login_selector"
+                android:gravity="center"
+                android:text="@string/efun_pd_register_finish"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

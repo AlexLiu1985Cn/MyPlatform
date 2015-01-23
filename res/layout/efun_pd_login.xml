@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_787cd3"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.efun.platform.widget.TitleView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.efun.platform.widget.TitleView>
+
+        <LinearLayout
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_90"
+            android:layout_marginTop="@dimen/e_size_180"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/e_size_90"
+                android:layout_height="@dimen/e_size_90"
+                android:background="@drawable/efun_pd_login_username" />
+
+            <EditText
+                android:id="@+id/edit_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/e_size_24"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/efun_pd_hint_account"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_1"
+            android:layout_marginBottom="@dimen/e_size_70"
+            android:layout_marginTop="@dimen/e_size_20"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_90"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/e_size_90"
+                android:layout_height="@dimen/e_size_90"
+                android:background="@drawable/efun_pd_login_password" />
+
+            <EditText
+                android:id="@+id/edit_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/e_size_24"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/efun_pd_hint_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_1"
+            android:layout_marginTop="@dimen/e_size_20"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/contaier_linear_1"
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_120"
+            android:layout_marginBottom="@dimen/e_size_40"
+            android:layout_marginTop="@dimen/e_size_117"
+            android:background="@drawable/efun_pd_cons_login_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efun_pd_login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="@dimen/e_size_30"
+            android:text="@string/efun_pd_login_forget"
+            android:textColor="@color/efun_pd_text_e1e1e1_to_454889_selecter"
+            android:textSize="@dimen/e_text_size_40" />
+
+        <LinearLayout
+            android:id="@+id/contaier_linear_2"
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_120"
+            android:layout_marginBottom="@dimen/e_size_20"
+            android:layout_marginTop="@dimen/e_size_80"
+            android:background="@drawable/efun_pd_cons_login_other_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/e_size_90"
+                android:layout_height="@dimen/e_size_90"
+                android:layout_marginLeft="@dimen/e_size_117"
+                android:layout_marginRight="@dimen/e_size_20"
+                android:background="@drawable/efun_pd_login_fb_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efun_pd_login_by_facebook"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contaier_linear_3"
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_120"
+            android:layout_marginBottom="@dimen/e_size_20"
+            android:layout_marginTop="@dimen/e_size_20"
+            android:background="@drawable/efun_pd_cons_login_other_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/e_size_90"
+                android:layout_height="@dimen/e_size_90"
+                android:layout_marginLeft="@dimen/e_size_117"
+                android:layout_marginRight="@dimen/e_size_20"
+                android:background="@drawable/efun_pd_login_google_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efun_pd_login_by_google"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contaier_linear_4"
+            android:layout_width="@dimen/e_size_800"
+            android:layout_height="@dimen/e_size_120"
+            android:layout_marginBottom="@dimen/e_size_20"
+            android:layout_marginTop="@dimen/e_size_20"
+            android:background="@drawable/efun_pd_cons_login_other_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/e_size_90"
+                android:layout_height="@dimen/e_size_90"
+                android:layout_marginLeft="@dimen/e_size_117"
+                android:layout_marginRight="@dimen/e_size_20"
+                android:background="@drawable/efun_pd_login_bahamut_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/efun_pd_login_by_bahamut"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_50" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/e_size_40"
+            android:layout_marginBottom="@dimen/e_size_40"
+            android:gravity="center"
+            android:text="@string/efun_pd_login_register"
+            android:textColor="@color/efun_pd_text_e1e1e1_to_454889_selecter"
+            android:textSize="@dimen/e_text_size_40" />
+    </LinearLayout>
+
+</ScrollView>

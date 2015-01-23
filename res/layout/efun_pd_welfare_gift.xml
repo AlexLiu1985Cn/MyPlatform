@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.efun.platform.widget.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.efun.platform.widget.TitleView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_540"
+        android:background="@drawable/efun_pd_welfare_gift_body"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_marginLeft="@dimen/e_size_62"
+            android:layout_width="@dimen/e_size_400"
+            android:layout_height="@dimen/e_size_400"/>
+
+        <LinearLayout
+            android:id="@+id/contaier_linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/e_size_400"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_70" 
+                android:shadowColor="@android:color/black"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="5.0"/>
+			<com.efun.platform.module.welfare.view.RoundProgress
+                    android:id="@+id/roundProgress"
+                    android:layout_width="@dimen/e_size_200"
+                    android:layout_height="@dimen/e_size_200" />
+                <TextView
+                    android:layout_width="@dimen/e_size_200"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/efun_pd_gift_count"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/e_text_size_40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="@dimen/e_size_24"
+        android:layout_marginRight="@dimen/e_size_24"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <com.efun.platform.widget.PagerTab
+            android:id="@+id/pager_view_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/e_size_120"
+            android:background="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/e_size_1"
+            android:background="@color/e_8e8e8e" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_view_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_1"
+        layout="@layout/efun_pd_game_detail_tab_bottom" />
+
+</LinearLayout>

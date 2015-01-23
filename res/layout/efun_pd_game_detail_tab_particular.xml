@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/e_size_40"
+        android:layout_marginBottom="@dimen/e_size_20">
+        <com.efun.platform.module.game.view.GamePictureList
+            android:id="@+id/gamePictureList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </com.efun.platform.module.game.view.GamePictureList>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/e_size_40"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/e_size_22"
+        android:paddingLeft="@dimen/e_size_62"
+        android:paddingRight="@dimen/e_size_62"
+        android:paddingTop="@dimen/e_size_20"
+        android:text="@string/efun_pd_games_intro"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/e_text_size_40" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/e_size_62"
+        android:paddingRight="@dimen/e_size_62"
+        android:paddingBottom="@dimen/e_size_40"
+        android:textColor="@color/e_8e8e8e"
+        android:lineSpacingExtra="@dimen/e_size_2"
+        android:textSize="@dimen/e_text_size_35" />
+
+</LinearLayout>
